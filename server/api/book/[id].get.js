@@ -2,6 +2,7 @@
 export default defineEventHandler(event=>{
     const id = getRouterParam(event, 'id')
     return {
-        hello:`id:${id}书本对应信息`
+            id:id,
+            name:`id为${id}书本对应信息`
     }
 })

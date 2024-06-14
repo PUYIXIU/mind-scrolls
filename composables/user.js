@@ -1,1 +1,6 @@
-export const useName = () => useState('name', ()=> 'admin')
+export const useUserInfo = ()=>useState('userInfo',()=>{
+    return {
+        username:'',
+        email:'',
+    }
+})

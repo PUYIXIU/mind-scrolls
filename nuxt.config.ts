@@ -24,7 +24,8 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss:{
-          additionalData: '@use "@/assets/styles/_colors.scss" as *;'
+          additionalData:
+              '@use "@/assets/styles/_colors.scss" as *;@use "@/assets/styles/global.scss" as *;@use "@/assets/styles/_font.scss" as *;@use "@/assets/styles/element-reset.scss" as *;'
         }
       }
     }
@@ -32,12 +33,7 @@ export default defineNuxtConfig({
 
   // SEO 和 Meta
   app:{
-    head:{
-      title:'Mind Scrolls | 脑轴', // 配置标题
-      link:[
-        {rel:'icon', type:'image/png', href:'/e-duck.png'}, // 配置头栏
-      ]
-    }
+    pageTransition:{name:'page', mode:'out-in'}
   },
 
   components:[
