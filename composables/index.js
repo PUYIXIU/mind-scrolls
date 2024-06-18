@@ -1,3 +1,14 @@
+
+export const colorList = [
+    '#6247aa',
+    '#7251b5',
+    '#815ac0',
+    '#9163cb',
+    '#a06cd5',
+    '#b185db',
+    '#c19ee0',
+]
+
 export const menuItemsEnum = [
     {id:0,title:'👁️ 检索', url:'', color:'#6247aa'},
     {id:1,title:'🌎 站点', url:'', color:'#7251b5'},

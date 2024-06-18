@@ -1,8 +1,18 @@
+
+@import "~/assets/styles/_colors.scss";
+@import "~/assets/styles/_font.scss";
+@import "~/assets/styles/element-reset.scss";
 *{
   padding:0;
   margin:0;
+  font-size:0.9rem;
 }
-
+div,p,body{
+  box-sizing: border-box;
+  &::-webkit-scrollbar{
+    width:0px;
+  }
+}
 body,html{
   background: #000;
   font-family: Alibaba-Health-Normal, Sunflower-Medium;

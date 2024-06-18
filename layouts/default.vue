@@ -16,6 +16,8 @@
           $main-middle-color 100%,
   );
   min-height:100vh;
+  //height:fit-content;
+  display: flex;
   position:relative;
 }
 </style>

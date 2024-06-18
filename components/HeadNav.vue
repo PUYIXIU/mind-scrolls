@@ -30,7 +30,8 @@ const currentMenu = useMenu()
 <style scoped lang="scss">
 .wrap{
   width:100vw;
-  height:100vh;
+  min-height:100vh;
+  height:100%;
   position:relative;
   pointer-events: none;
   user-select: none;
