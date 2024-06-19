@@ -2,9 +2,21 @@
 import {menuItemsEnum} from "../composables/index.js";
 
 const menuItems = menuItemsEnum
-
+const router = useRouter()
 const currentMenu = useMenu()
 
+function changeMenu(menuItem){
+  // currentMenu.value = menuItem
+  menuItem.url && router.push(menuItem.url)
+}
+
+onMounted(()=>{
+  let currentPath = router.currentRoute.value.fullPath
+  console.log(currentPath)
+  let root = currentPath.split('/')[1]
+  let currentMenuItem = menuItemsEnum.find(item=>item.root == root)
+  currentMenu.value = currentMenuItem
+})
 
 </script>
 
@@ -18,7 +30,8 @@ const currentMenu = useMenu()
       </div>
     </div>
     <ul class="menu-bar">
-      <li v-for="(item,index) in menuItems" :key="index" @click="currentMenu = item"
+      <li v-for="(item,index) in menuItems" :key="index"
+          @click="changeMenu(item)"
           :style="{'--color':item.color}"
           :class="{'active':currentMenu.id == item.id}">
         {{item.title}}

@@ -1,6 +1,5 @@
 <script setup>
 
-import {useToken} from "../../composables/user.js";
 import {setStorage, token_key} from "../../utils/storage.js";
 const router = useRouter()
 useHead({

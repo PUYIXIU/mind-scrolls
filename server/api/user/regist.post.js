@@ -1,4 +1,8 @@
-import {UserModel} from "../../db/model.js";
+import UserModel from "~/server/db/Model/UserModel.js";
+
+/**
+ * 新用户注册
+ */
 
 export default defineEventHandler(async event=>{
     let body = await readBody(event)

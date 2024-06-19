@@ -1,12 +1,14 @@
 <script setup >
 
 const workList = ref([
-  {title:'《罪与罚》',author:"陀思妥耶夫斯基",nation:"俄国",},
-  {title:'《ABC》',author:"陀思妥耶夫斯基",nation:"俄国",},
-  {title:'《ABC》',author:"陀思妥耶夫斯基",nation:"俄国",},
-  {title:'《ABC》',author:"陀思妥耶夫斯基",nation:"俄国",},
-  {title:'《ABC》',author:"陀思妥耶夫斯基",nation:"俄国",},
-  {title:'《ABC》',author:"陀思妥耶夫斯基",nation:"俄国",},
+  {
+    title:'《罪与罚》',
+    author:"陀思妥耶夫斯基",
+    nation:"俄国",
+    age:'十八世纪末',
+    status:'待看',
+
+  },
 ])
 
 // 点击用的按钮
@@ -14,7 +16,7 @@ import WorkList from "../../components/work/WorkList.vue";
 
 const toolBtns = [
   {id:0, title:'➕ 新增', handle:openAddDialog},
-  {id:1, title:'❌ 删除'},
+  {id:1, title:'☑️ 批量管理'},
 ]
 
 const workAddDialogRef = ref()
@@ -27,7 +29,7 @@ function openAddDialog(){
 <template>
   <div>
     <NuxtLayout>
-      <HeadNav/>
+<!--      <HeadNav/>-->
       <ContentBody>
         <div class="content-box">
           <div class="search-box">

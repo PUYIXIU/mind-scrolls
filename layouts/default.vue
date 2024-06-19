@@ -1,8 +1,9 @@
-<script setup lang="ts">
+<script setup >
 </script>
 
 <template>
   <div class="default-layout-wrapper">
+      <HeadNav/>
       <slot/>
   </div>
 </template>
@@ -16,8 +17,8 @@
           $main-middle-color 100%,
   );
   min-height:100vh;
-  //height:fit-content;
   display: flex;
+  justify-content: center;
   position:relative;
 }
 </style>

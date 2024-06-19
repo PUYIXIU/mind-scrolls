@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: false }, // 控制台
   buildDir:'nuxt-build', // 构建文件夹
 
+
   typescript:{
     typeCheck:true, // 启动构建时类型检查 同时要在dev下安装vue-tsc@^1和typescript
   },
