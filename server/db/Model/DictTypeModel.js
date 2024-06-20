@@ -4,7 +4,6 @@
  */
 import db from "../mongodb/index";
 const DictTypeSchema = db.Schema({
-    key:{type:String,required:true,trim:true}, // 字典键值
     name:{type:String,required:true,trim:true}, // 字典描述
 })
 

@@ -6,6 +6,7 @@
   padding:0;
   margin:0;
   font-size:0.9rem;
+  user-select: none;
 }
 div,p,body{
   box-sizing: border-box;
@@ -18,3 +19,47 @@ body,html{
   font-family: Alibaba-Health-Normal, Sunflower-Medium;
 }
 
+// 表单模块
+.dialog-form-module{
+}
+// 表单中间的模块标识字体
+.dialog-form-module-title{
+  border: 1px solid $pp-5;
+  box-shadow:
+          0px 0px 5px rgb(from $pp-5 r g b / 40%),
+          0px 0px 10px rgb(from $pp-5 r g b / 20%),
+          0px 0px 20px rgb(from $pp-5 r g b / 10%);
+  margin-bottom:0.5rem;
+  padding:0rem 0.5rem;
+  padding-right:0;
+  display: flex;
+  justify-content: space-between;
+  height:2rem;
+  .title{
+    line-height: 2rem;
+    font-size:0.85rem;
+  }
+  .tool-bar{
+    span{
+      display: inline-block;
+      height: 100%;
+      cursor:pointer;
+      padding:0 1rem;
+      background: $pp-1;
+      &:nth-child(2){background: $pp-2};
+      &:nth-child(3){background: $pp-3};
+      &:nth-child(4){background: $pp-4};
+      transition-property:filter;
+      transition-duration:0.2s;
+      &:hover{
+        filter:brightness(1.1);
+      }
+    }
+  }
+}
+// 表单模块身体部分
+.dialog-form-body{
+  max-height:40vh;
+  overflow-y: scroll;
+
+}

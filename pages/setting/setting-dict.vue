@@ -45,7 +45,7 @@ const data = ref([
         </el-table>
       </ContentBody>
       <FootNav :btn-list="toolBtns" />
-
+      <dict-add/>
     </NuxtLayout>
   </div>
 </template>

@@ -2,9 +2,9 @@
 
 const router = useRouter()
 const toolBtns = [
-  {id:0, title:'📘 字典管理',handle:()=>gotoPage(router, '/setting/setting-dict')},
+  {id:0, title:'📘 字典管理',handle:(
+)=>gotoPage(router, '/setting/setting-dict')},
 ]
-
 </script>
 
 <template>

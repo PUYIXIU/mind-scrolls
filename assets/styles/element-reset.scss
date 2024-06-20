@@ -7,6 +7,38 @@
   --el-input-focus-border-color:#b38fce;
   --el-input-hover-border-color:#b38fce;
   --el-input-text-color:#51425e;
+  &.border-input{
+    .el-input-group__prepend{
+      box-shadow: none;
+      background: transparent;
+      padding:0 0.3rem;
+      font-weight: bold;
+      color:$pp-7;
+      text-shadow:
+              0px 0px 5px rgb(from $pp-7 r g b / 30%),
+              0px 0px 10px rgb(from $pp-7 r g b /20%),
+              0px 0px 20px rgb(from $pp-7 r g b / 10%);
+    }
+    .el-input__wrapper{
+      --el-input-placeholder-color:#{rgb(from $b-4 r g b /25%)};
+      --el-input-text-color:#{$b-1};
+      border-radius:0;
+      box-shadow:none !important;
+      border-bottom: 1px solid rgb(from $b-4 r g b /25%);
+      transition-property: border-bottom;
+      transition-duration: 0.2s;
+      input{
+        text-shadow:
+                0px 0px 5px rgb(from $b-1 r g b / 60%),
+                0px 0px 10px rgb(from $b-1 r g b /20%),
+                0px 0px 20px rgb(from $b-1 r g b / 40%);
+      }
+      &.is-focus{
+        border-bottom: 1px solid rgb(from $b-4 r g b /100%);
+        font-weight: bold;
+      }
+    }
+  }
   .el-input__suffix i{
     color:$light-color ;
     &:hover{
@@ -100,4 +132,9 @@
       }
     }
   }
+}
+
+.el-table{
+  background: transparent !important;
+
 }

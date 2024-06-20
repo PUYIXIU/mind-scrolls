@@ -1,4 +1,4 @@
-import UserModel from "~/server/db/Model/UserModel.js";
+import {UserModel} from "~/server/db/Model/UserModel.js";
 
 /**
  * 新用户注册
